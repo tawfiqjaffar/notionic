@@ -1,10 +1,10 @@
 const BLOG = {
   title: 'TJ',
-  author: '左蓝',
+  author: 'Tawfiq Jaffar - made with Zuolan Notionic',
   email: 'me@tawfiqjaffar.com',
   link: 'https://blog.tawfiqjaffar.com',
   newsletter: 'Notionic Weekly',
-  description: "I'm TJ, nice to meet you",
+  description: "Hi, I'm TJ, nice to meet you",
   lang: 'en-US',
   appearance: 'auto', // ['light', 'dark', 'auto'],
   font: 'sans-serif', // ['sans-serif', 'serif']
@@ -15,7 +15,7 @@ const BLOG = {
   postsPerPage: 10,
   sortByDate: true,
   pagesShow: {
-    newsletter: true,
+    newsletter: false,
     notes: false,
     projects: true,
     contact: true,
@@ -30,7 +30,7 @@ const BLOG = {
   socialLink: {
     twitter: 'https://twitter.com/tawfiqjaffar',
     github: 'https://github.com/tawfiqjaffar',
-    telegram: 'https://t.me/tee_seven'
+    telegram: 'https://t.me/t7_notion'
   },
   seo: {
     keywords: ['Notionic', 'Tawfiq', 'Blog'],

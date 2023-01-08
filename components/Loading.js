@@ -11,7 +11,7 @@ export default function Loading({ notionSlug }) {
 
   if (notionSlug) {
     setTimeout(() => {
-      setshowNotion(true)
+      setshowNotion(false)
     }, 3000)
   }
 

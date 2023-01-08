@@ -1,8 +1,8 @@
 import BLOG from '@/blog.config'
 
 export default async function sendtotg(req, res) {
-  const TG_TOKEN = BLOG.telegramToken
-  const TG_CHAT_ID = BLOG.telegramChatId
+  const TG_TOKEN = BLOG.telegram.token
+  const TG_CHAT_ID = BLOG.telegram.chatId
   const tgUrl = 'https://api.telegram.org/bot' + TG_TOKEN + '/sendMessage'
   const init = {
     method: 'POST',
@@ -19,6 +19,7 @@ export default async function sendtotg(req, res) {
     // const respText = await response.text()
     res.send({ status: 'Success' })
   } else {
+    console.error(response)
     res.send({ status: 'Fail to send message to Telegram' })
   }
 }

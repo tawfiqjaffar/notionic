@@ -5,7 +5,7 @@ import Social from '../Common/Social.js'
 import { lang } from '@/lib/lang'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
-import { ClipboardCheckIcon, MailIcon, RssIcon } from '@heroicons/react/outline'
+import { MailIcon } from '@heroicons/react/outline'
 import dynamic from 'next/dynamic'
 import { NotionRenderer } from 'react-notion-x'
 
@@ -14,17 +14,8 @@ const Collection = dynamic(() =>
 )
 
 const Hero = ({ blockMap }) => {
-  const [showCopied, setShowCopied] = useState(false)
   const { locale } = useRouter()
   const t = lang[locale]
-
-  const clickCopy = async () => {
-    setShowCopied(true)
-    navigator.clipboard.writeText(BLOG.link + '/feed')
-    setTimeout(() => {
-      setShowCopied(false)
-    }, 1000)
-  }
 
   return (
     <>

@@ -3,10 +3,10 @@ import BLOG from '@/blog.config'
 import { lang } from '@/lib/lang'
 import { useRouter } from 'next/router'
 import {
-  UserIcon,
-  UsersIcon,
   BookOpenIcon,
-  MailIcon
+  MailIcon,
+  UserIcon,
+  UsersIcon
 } from '@heroicons/react/outline'
 import Social from '../Common/Social.js'
 import { motion } from 'framer-motion'
@@ -71,7 +71,8 @@ const Footer = ({ fullWidth }) => {
               (link) =>
                 link.show && (
                   <Link passHref key={link.id} href={link.to} scroll={false}>
-                    <li key={link.id}
+                    <li
+                      key={link.id}
                       className={`${
                         activeMenu === link.to
                           ? 'bg-gray-200 dark:bg-gray-700'

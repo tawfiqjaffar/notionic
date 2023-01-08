@@ -3,7 +3,11 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 
 import WechatPay from '@/components/Post/WechatPay'
-import { ThumbUpIcon, ChevronLeftIcon, ArrowUpIcon } from '@heroicons/react/outline'
+import {
+  ArrowUpIcon,
+  ChevronLeftIcon,
+  ThumbUpIcon
+} from '@heroicons/react/outline'
 
 const Aside = ({ subPageTitle, frontMatter }) => {
   const [showPay, setShowPay] = useState(false)
@@ -36,7 +40,11 @@ const Aside = ({ subPageTitle, frontMatter }) => {
               </button>
             )}
             {showSubPageTitle && (
-              <Link passHref href={`${BLOG.path}/${frontMatter.slug}`} scroll={false}>
+              <Link
+                passHref
+                href={`${BLOG.path}/${frontMatter.slug}`}
+                scroll={false}
+              >
                 <a className='text-gray-600 dark:text-day hover:text-gray-400 dark:hover:text-gray-400'>
                   <ChevronLeftIcon className='w-5 h-5' />
                 </a>
@@ -44,9 +52,7 @@ const Aside = ({ subPageTitle, frontMatter }) => {
             )}
             {showButton && (
               <button
-                onClick={() =>
-                  window.scrollTo({ top: 0, behavior: 'smooth' })
-                }
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 className='text-gray-600 dark:text-day hover:text-gray-400 dark:hover:text-gray-400'
               >
                 <ArrowUpIcon className='w-5 h-5' />

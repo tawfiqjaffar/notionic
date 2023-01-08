@@ -2,7 +2,7 @@ import Container from '@/components/Container'
 import NotePost from '@/components/NotePost'
 import NotesHero from '@/components/Hero/Notes'
 import { getBlocksMaps } from '@/lib/getBlocksMaps'
-import { getPostBlocks, getAllPosts } from '@/lib/notion'
+import { getAllPosts, getPostBlocks } from '@/lib/notion'
 
 export async function getStaticProps() {
   const { pagesJson, siteConfigObj } = await getBlocksMaps()
@@ -10,9 +10,15 @@ export async function getStaticProps() {
   const blocksJson = pagesJson
   // Hide table header and home page on Archive page.
   for (let i = 0; i < blocksJson.length; i++) {
-    const deleteTitleBlock = blocksJson[i].title === 'Title' ? blocksJson.splice(i, i + 1) : blocksJson
-    const deleteIndexBlock = blocksJson[i].slug === 'index' ? blocksJson.splice(i, i + 1) : blocksJson
-    console.log('[INFO] Hide Craft Table Header: ', deleteTitleBlock.length, deleteIndexBlock.length)
+    const deleteTitleBlock =
+      blocksJson[i].title === 'Title' ? blocksJson.splice(i, i + 1) : blocksJson
+    const deleteIndexBlock =
+      blocksJson[i].slug === 'index' ? blocksJson.splice(i, i + 1) : blocksJson
+    console.log(
+      '[INFO] Hide Craft Table Header: ',
+      deleteTitleBlock.length,
+      deleteIndexBlock.length
+    )
   }
 
   const heros = await getAllPosts({ onlyHidden: true })

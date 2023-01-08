@@ -2,16 +2,22 @@
 import * as React from 'react'
 
 const NotionAvatar = (props) => (
-  <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-       viewBox="0 0 415.000000 415.000000"
-       fill="currentColor"
-       preserveAspectRatio="xMidYMid meet">
+  <svg
+    version='1.0'
+    xmlns='http://www.w3.org/2000/svg'
+    viewBox='0 0 415.000000 415.000000'
+    fill='currentColor'
+    preserveAspectRatio='xMidYMid meet'
+  >
     <metadata>
       Created by potrace 1.16, written by Peter Selinger 2001-2019
     </metadata>
-    <g transform="translate(0.000000,415.000000) scale(0.100000,-0.100000)"
-       stroke="none">
-      <path d="M2095 3954 c-49 -24 -83 -34 -116 -34 -26 0 -63 -7 -84 -16 -20 -8
+    <g
+      transform='translate(0.000000,415.000000) scale(0.100000,-0.100000)'
+      stroke='none'
+    >
+      <path
+        d='M2095 3954 c-49 -24 -83 -34 -116 -34 -26 0 -63 -7 -84 -16 -20 -8
 -48 -14 -61 -12 l-24 3 26 38 c14 21 24 40 22 41 -1 2 -57 -30 -123 -71 -112
 -70 -124 -80 -175 -155 -30 -44 -74 -102 -97 -130 l-43 -50 0 79 c0 51 -5 86
 -14 98 -13 18 -14 18 -21 -5 -19 -61 -37 -93 -44 -81 -8 12 -59 -70 -87 -138
@@ -102,7 +108,8 @@ m-466 -682 l75 -20 -73 6 c-118 9 -147 -26 -103 -128 25 -59 71 -222 71 -250
 4 8 23 18 43 21 34 5 44 17 162 187 69 100 167 246 218 324 51 79 97 140 102
 138 4 -3 -4 -27 -20 -53z m50 -324 c-75 -134 -279 -440 -331 -498 l-41 -45 27
 45 c15 25 41 65 59 90 67 93 234 369 280 460 41 82 49 92 56 73 6 -17 -4 -44
--50 -125z"/>
+-50 -125z'
+      />
     </g>
   </svg>
 

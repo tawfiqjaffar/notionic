@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { SunIcon, MoonIcon } from '@heroicons/react/outline'
+import { MoonIcon, SunIcon } from '@heroicons/react/outline'
 import { useTheme } from 'next-themes'
 
 const ThemeSwitcher = () => {

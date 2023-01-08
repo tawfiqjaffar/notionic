@@ -1,8 +1,8 @@
 const BLOG = {
   title: 'TJ',
   author: '左蓝',
-  email: 'i@zuolan.me',
-  link: 'https://zuolan.me',
+  email: 'me@tawfiqjaffar.com',
+  link: 'https://blog.tawfiqjaffar.com',
   newsletter: 'Notionic Weekly',
   description: "I'm TJ, nice to meet you",
   lang: 'en-US',
@@ -28,12 +28,12 @@ const BLOG = {
   ogImageGenerateHost: 'og-zl.vercel.app', // The link to generate OG image, don't end with a slash
   defaultCover: '/cover.png',
   socialLink: {
-    twitter: 'https://twitter.com/izuolan',
+    twitter: 'https://twitter.com/tawfiqjaffar',
     github: 'https://github.com/tawfiqjaffar',
     telegram: 'https://t.me/tee_seven'
   },
   seo: {
-    keywords: ['Notionic', 'Zuolan', 'Blog'],
+    keywords: ['Notionic', 'Tawfiq', 'Blog'],
     googleSiteVerification: '' // Remove the value or replace it with your own google site verification code
   },
   notionPageId: process.env.NOTION_PAGE_ID, // DO NOT CHANGE THIS! Edit .env file!

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { lang } from '@/lib/lang'
 import { useRouter } from 'next/router'
+import BLOG from '@/blog.config'
 
 function Contact() {
   const [showResult, setShowResult] = useState(false)
@@ -15,8 +16,9 @@ function Contact() {
     //   setSubmitting(false)
     //   setShowResult(true)
     // }, 3000)
-    const apiToken = '5912623693:AAHdEey3lbdTun-9VgqNJ04fHAnePfBHIiA'
-    const chatId = '-1001807458645'
+
+    const apiToken = BLOG.telegram.token
+    const chatId = BLOG.telegram.chatId
     const text = `Message from ${event.target.name.value} - ${event.target.mail.value} : ${event.target.message.value}`
 
     const urlString = `https://api.telegram.org/bot${apiToken}/sendMessage?chat_id=${chatId}&text=${text}`

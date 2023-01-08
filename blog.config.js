@@ -1,10 +1,10 @@
 const BLOG = {
-  title: 'Notionic',
+  title: 'TJ',
   author: '左蓝',
   email: 'i@zuolan.me',
   link: 'https://zuolan.me',
   newsletter: 'Notionic Weekly',
-  description: 'A static blog build on top of Notion and Next.js',
+  description: "I'm TJ, nice to meet you",
   lang: 'en-US',
   appearance: 'auto', // ['light', 'dark', 'auto'],
   font: 'sans-serif', // ['sans-serif', 'serif']
@@ -19,8 +19,8 @@ const BLOG = {
     notes: false,
     projects: true,
     contact: true,
-    books: true,
-    friends: true
+    books: false,
+    friends: false
   },
   showWeChatPay: false,
   previewImagesEnabled: true,

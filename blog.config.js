@@ -41,8 +41,8 @@ const BLOG = {
   notionAccessToken: process.env.NOTION_ACCESS_TOKEN, // Useful if you prefer not to make your database public
   notionDomain: 'tawfiqjaffar.notion.site',
   telegram: {
-    token: process.env.TELEGRAM_TOKEN,
-    chatId: process.env.TELEGRAM_CHAT_ID,
+    token: process.env.NEXT_PUBLIC_TELEGRAM_TOKEN,
+    chatId: process.env.NEXT_PUBLIC_TELEGRAM_CHAT_ID,
     channelUrl: 'https://t.me/t7_notion',
     channelName: 't7_notion'
   },

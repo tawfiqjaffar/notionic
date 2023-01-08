@@ -1,7 +1,7 @@
+import BLOG from '@/blog.config'
 import { useState } from 'react'
 import { lang } from '@/lib/lang'
 import { useRouter } from 'next/router'
-import BLOG from '@/blog.config'
 
 function Contact() {
   const [showResult, setShowResult] = useState(false)
@@ -12,10 +12,6 @@ function Contact() {
   const sentMessage = async (event) => {
     event.preventDefault()
     setSubmitting(true)
-    // setTimeout(() => {
-    //   setSubmitting(false)
-    //   setShowResult(true)
-    // }, 3000)
 
     const apiToken = BLOG.telegram.token
     const chatId = BLOG.telegram.chatId

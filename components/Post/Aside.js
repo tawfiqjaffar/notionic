@@ -19,7 +19,7 @@ const Aside = ({ subPageTitle, frontMatter }) => {
       setShowSubPageTitle(true)
     }
     window.addEventListener('scroll', () => {
-      if (window.pageYOffset > 900) {
+      if (window.pageYOffset > 200) {
         setShowButton(true)
       } else {
         setShowButton(false)

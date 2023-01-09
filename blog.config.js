@@ -30,6 +30,7 @@ const BLOG = {
   socialLink: {
     twitter: 'https://twitter.com/tawfiqjaffar',
     github: 'https://github.com/tawfiqjaffar',
+    linkedIn: 'https://www.linkedin.com/in/tawfiqjaffar/',
     telegram: 'https://t.me/t7_notion'
   },
   seo: {
